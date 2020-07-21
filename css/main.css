@@ -1,0 +1,393 @@
+/* ------ Спецификация ------ */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #6c7279;
+    padding: 0;
+    letter-spacing: 0em;
+    font-size: 14px;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2d3033;
+    line-height: 1.6em;
+    font-size: inherit;
+}
+
+h1 {
+    font-size: 45px;
+    color: #fff;
+}
+
+a,
+a:hover,
+a:active {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a,
+button,
+input {
+    transition: all 0.5s ease;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+input,
+input:hover,
+input:focus,
+input:active,
+button,
+button:hover,
+button:focus,
+button:active {
+    outline: none;
+}
+
+
+.btn {
+    font-weight: 700;
+    color: #fff;
+    font-size: 13px;
+    padding: 13px 0;
+    width: 201px;
+    background: #e84545;
+    text-transform: uppercase;
+    border: 1px solid #e84545;
+}
+
+.btn:hover {
+    color: #fff;
+    background: none;
+    border-color: #fff;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+/* First display */
+
+.header {
+    background: url(../img/main-bg.jpg) no-repeat center top / cover;
+    color: #fff;
+    padding: 27px 0 241px;
+}
+
+.navigation {
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.logo {
+    color: #626fe4;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #fff;
+    font-weight: 400;
+}
+
+.menu {}
+
+.menu__item a {
+    text-transform: uppercase;
+    display: block;
+    padding: 0 35px 31px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__item:last-child a {
+    padding-right: 0;
+}
+
+.menu__item a:hover {
+    border-bottom-color: rgba(255,255,255,0.50);
+}
+
+.offer {
+    margin-top: 167px;
+}
+
+.offer__text {
+    max-width: 555px;
+    margin: 27px auto 28px;
+    font-size: 22px;
+}
+
+
+/*---- Second Display -----*/
+
+.features {
+    padding: 122px 0 50px;
+}
+
+.feature {
+    max-width: 300px;
+    margin: 0 auto 73px;
+}
+
+.feature__title {
+    margin: 28px 0 15px;
+}
+
+.feature__text {
+    line-height: 1.5em;
+}
+
+/*---- Third Display -----*/
+.gallery {
+    padding-bottom: 102px;
+}
+
+.gallery-img {
+    position: relative;
+    max-width: 263px;
+    margin: 0 auto 25px;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-img__hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(211,64,63,0.9);
+    opacity: 0;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    color: #fff;
+}
+
+.gallery-img__hover:hover {
+    opacity: 1;
+}
+
+.gallery-img__title {
+    color: #fff;
+}
+
+
+/*---- Fourth Display -----*/
+.team {
+    padding: 130px 0 116px;
+    background: #f1f2fd;
+}
+
+.member {
+    margin: 0 auto;
+}
+
+.member__img {
+    margin-bottom: 22px;
+    max-width: 100%;
+}
+
+.member__title {
+    font-size: 22px;
+    text-transform: none;
+    margin-bottom: -2px;
+}
+
+.member__position {
+    margin-bottom: 19px;
+    color: #e84545;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.member__social {
+    margin-top: 28px;
+}
+
+.member__account {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    display: flex;
+    color: #c6cacc;
+}
+
+.member__account:not(:last-child) {
+    margin-right: 4px;
+}
+
+.member__account:hover {
+    background: #c6cacc;
+    color: #fff;
+}
+
+.woman {
+	background: url('../img/review-1.jpg') no-repeat top right /cover;
+	height: 500px;
+}
+
+.quote {
+	background: #53354a;
+	padding: 131px 42px 50px 67px;
+    width: 100%;
+    color: #fff;
+}
+
+.quote__text {
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.17em;
+}
+
+.quote__subtext {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #fff;
+}
+
+.download {
+
+}
+
+.start {
+    padding: 89px 0 99px;
+}
+
+.start__title {
+    font-size: 28px;
+    color: #000;
+    text-transform: none;
+    margin-bottom: 0;
+    line-height: 1.3em;
+}
+
+.start__text {
+    margin-top: 5px;
+    font-size: 13px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.start__btn {
+    width: 281px;
+}
+
+.start__btn:hover {
+    color: #000;
+    background: #fff;
+    border-color: #000;
+}
+
+.contact {
+    padding: 80px 0 59px;
+    background: #3a3e64;
+    border-bottom: 12px solid #313454;
+}
+
+.info_short {
+    max-width: 180px;
+}
+
+.info__title {
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.info__text {
+    color: #adaebb;
+}
+
+.info__text_red {
+    color: #e84545;
+}
+
+.info__text_name {
+    color: #fff;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* 768-992px */
+@media screen and (max-width: 992px) {
+    .menu__item:first-child a {
+        padding-left: 0;
+    }
+    .menu {
+        margin-top: 15px;
+    }
+    .member {
+        margin-bottom: 50px;
+    }
+    .team {
+        padding-bottom: 66px;
+    }
+    .info {
+        margin-bottom: 30px;
+    }
+    .contact {
+        padding-bottom: 29px;
+    }
+    .quote {
+        padding: 10%;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) {
+    .navigation {
+        border-bottom: none;
+    }
+}
+
+/* 320-576px */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 36px;
+    }
+    .offer__text {
+        font-size: 18px;
+    }
+    .quote__text {
+        font-size: 28px;
+    }
+    .start__title {
+        font-size: 24px;
+    }
+}
